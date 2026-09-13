@@ -46,15 +46,27 @@ export default function Home() {
       </section>
 
       <section className="about section" id="sobre">
-        <p className="section-index">01 / Sobre</p>
+        <p className="section-index">01 / Sobre mim</p>
         <div className="section-content about-grid">
-          <h2>Criação visual com estratégia, repertório e personalidade.</h2>
-          <div>
+          <h2>Sou Kauany Verdi Guerra.</h2>
+          <div className="about-copy">
             <p>
-              Sou estudante de Publicidade e Propaganda e gosto de transformar referências, comportamento e estratégia em comunicação visual clara e marcante.
+              Oie, seja bem-vindo.
             </p>
             <p>
-              Este espaço foi pensado como um portfólio vivo: menos currículo engessado e mais projetos contados como cases, com contexto, processo e escolhas criativas.
+              Durante o ensino médio, descobri a publicidade a partir de um hobby: “cuidar do Instagram da escola”. O que parecia apenas uma tarefa simples se transformou na criação de um canal de comunicação de uma escola pública estadual que hoje alcança mais de 18 mil seguidores.
+            </p>
+            <p>
+              Para mim, a publicidade é uma ciência que une minhas duas grandes paixões: criatividade e estratégia.
+            </p>
+            <p>
+              Sou uma publicitária em formação, estou no 6º período de Publicidade e Propaganda na Universidade de Passo Fundo (UPF) e me identifico muito com a parte estratégica por trás de um case publicitário. Pesquisa, planejamento e marketing puro são as áreas que mais gosto de aprender e trabalhar.
+            </p>
+            <p>
+              Atualmente, estagio na Be8 onde atuo com planejamento e atendimento de campanha de endomarketing e comunicação interna e coloco em prática tudo aquilo que aprendo na faculdade.
+            </p>
+            <p>
+              É um prazer ter você por aqui, arraste e confira mais sobre os trabalhos que desenvolvi ao longo da minha trajetória.
             </p>
           </div>
         </div>
