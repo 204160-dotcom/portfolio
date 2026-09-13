@@ -1,0 +1,21 @@
+@media (max-width: 820px) {
+  .portfolio-site .site-header nav { gap: 14px; font-size: .8rem; }
+  .portfolio-site .hero { min-height: 80vh; }
+  .portfolio-site .hero h1 { font-size: clamp(4rem, 20vw, 7rem); }
+  .portfolio-site .hero-footer, .portfolio-site .section, .portfolio-site .about-wrap { grid-template-columns: 1fr; }
+  .portfolio-site .hero-footer { gap: 28px; }
+  .portfolio-site .hero-footer a { justify-self: start; }
+  .portfolio-site .section { gap: 34px; }
+  .portfolio-site .portrait-wrap { max-width: 520px; }
+  .portfolio-site .project { grid-template-columns: 40px 1fr auto; }
+}
+@media (max-width: 520px) {
+  .portfolio-site .site-header { padding: 18px 20px; }
+  .portfolio-site .site-header nav { gap: 11px; }
+  .portfolio-site .hero, .portfolio-site .section { padding-left: 20px; padding-right: 20px; }
+  .portfolio-site .hero { min-height: 76vh; }
+  .portfolio-site .hero h1 { font-size: clamp(3.5rem, 21vw, 6rem); }
+  .portfolio-site .project { grid-template-columns: 32px 1fr; }
+  .portfolio-site .project .arrow { display: none; }
+  .portfolio-site footer { padding: 22px 20px; gap: 20px; font-size: .78rem; }
+}
