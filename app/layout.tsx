@@ -1,5 +1,9 @@
 import type { Metadata } from "next";
 import "./globals.css";
+import "./portfolio.css";
+import "./portfolio-home.css";
+import "./portfolio-sections.css";
+import "./portfolio-responsive.css";
 import PortfolioShell from "./PortfolioShell";
 
 export const metadata: Metadata = {
@@ -11,7 +15,7 @@ export default function RootLayout({ children }: Readonly<{ children: React.Reac
   return (
     <html lang="pt-BR">
       <body>
-        <div className="legacy-source" aria-hidden="true">
+        <div className="legacy-source" hidden aria-hidden="true">
           {children}
         </div>
         <PortfolioShell />
