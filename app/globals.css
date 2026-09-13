@@ -16,9 +16,10 @@ nav { display: flex; gap: 28px; font-size: .95rem; }
 .section { display: grid; grid-template-columns: 220px 1fr; gap: 5vw; padding: 10vh 4vw; border-bottom: 1px solid #111; }
 .section-index { margin: 0; }
 .section-content h2 { margin: 0; font-size: clamp(2.8rem, 5.5vw, 6rem); line-height: .98; letter-spacing: -.05em; }
-.about-grid { display: grid; grid-template-columns: 1.4fr .8fr; gap: 7vw; }
-.about-grid > div { align-self: end; }
-.about-grid p { font-size: 1.1rem; line-height: 1.55; }
+.about-grid { display: grid; grid-template-columns: .95fr 1.05fr; gap: 8vw; align-items: start; }
+.about-copy { max-width: 720px; }
+.about-copy p { margin: 0 0 1.55rem; font-size: clamp(1.05rem, 1.35vw, 1.22rem); line-height: 1.65; }
+.about-copy p:first-child { font-family: Georgia, 'Times New Roman', serif; font-size: clamp(1.6rem, 2.5vw, 2.5rem); line-height: 1.15; font-style: italic; margin-bottom: 2.2rem; }
 .project { display: grid; grid-template-columns: 70px 1fr auto; gap: 20px; padding: 32px 0; border-top: 1px solid #111; align-items: start; }
 .project:last-child { border-bottom: 1px solid #111; }
 .project h3 { margin: 6px 0 10px; font-size: clamp(2rem, 4vw, 4.2rem); letter-spacing: -.04em; }
@@ -37,5 +38,6 @@ footer { display: flex; justify-content: space-between; padding: 24px 4vw; backg
   .hero-footer { gap: 28px; }
   .hero-footer a { justify-self: start; }
   .section { gap: 36px; }
+  .about-grid { gap: 42px; }
   .project { grid-template-columns: 42px 1fr auto; }
 }
