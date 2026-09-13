@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import "./globals.css";
 import "./portfolio.css";
+import "./portfolio-base.css";
 import "./portfolio-home.css";
 import "./portfolio-sections.css";
 import "./portfolio-responsive.css";
