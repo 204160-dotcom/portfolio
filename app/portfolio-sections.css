@@ -1,0 +1,24 @@
+.portfolio-site .section { display: grid; grid-template-columns: 190px 1fr; gap: 5vw; padding: 10vh 4vw; border-bottom: 1px solid #111; }
+.portfolio-site .section-index { margin: 0; }
+.portfolio-site .section-content h2, .portfolio-site .about-copy h2 { margin: 0; font-size: clamp(2.9rem, 5.4vw, 5.8rem); line-height: .95; letter-spacing: -.05em; }
+.portfolio-site .about-wrap { display: grid; grid-template-columns: minmax(280px, .8fr) minmax(0, 1.2fr); gap: 6vw; align-items: start; }
+.portfolio-site .portrait-wrap { margin: 0; }
+.portfolio-site .portrait, .portfolio-site .portrait-placeholder { width: 100%; aspect-ratio: 2 / 3; display: block; }
+.portfolio-site .portrait { object-fit: cover; }
+.portfolio-site .portrait-placeholder { background: #deddd8; }
+.portfolio-site .about-copy h2 { margin-bottom: 2.5rem; }
+.portfolio-site .about-copy p { font-size: clamp(1.02rem, 1.25vw, 1.18rem); line-height: 1.68; margin: 0 0 1.45rem; }
+.portfolio-site .about-copy .about-lead { font-family: Georgia, 'Times New Roman', serif; font-style: italic; font-size: clamp(1.5rem, 2.2vw, 2.2rem); line-height: 1.2; }
+.portfolio-site .projects .section-content > h2 { margin-bottom: 2.5rem; }
+.portfolio-site .project { display: grid; grid-template-columns: 56px 1fr auto; gap: 22px; padding: 30px 0; border-top: 1px solid #111; }
+.portfolio-site .project:last-child { border-bottom: 1px solid #111; }
+.portfolio-site .project h3 { margin: 6px 0 9px; font-size: clamp(2rem, 3.8vw, 3.8rem); letter-spacing: -.04em; }
+.portfolio-site .project p { max-width: 700px; line-height: 1.5; margin: 0; }
+.portfolio-site .arrow { font-size: 1.8rem; }
+.portfolio-site .contact { background: #111; color: #f4f3ef; }
+.portfolio-site .contact-content { min-height: 48vh; display: flex; flex-direction: column; justify-content: space-between; gap: 28px; }
+.portfolio-site .contact-content h2 { font-size: clamp(3rem, 6vw, 6rem); }
+.portfolio-site .contact-content > p { font-size: 1.1rem; max-width: 560px; line-height: 1.6; }
+.portfolio-site .contact-links { display: flex; flex-direction: column; align-items: flex-start; gap: 10px; }
+.portfolio-site .contact-links a { font-size: clamp(1.2rem, 2.2vw, 2rem); border-bottom: 1px solid currentColor; }
+.portfolio-site footer { display: flex; justify-content: space-between; padding: 24px 4vw; background: #111; color: #f4f3ef; border-top: 1px solid #555; font-size: .9rem; }
