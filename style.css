@@ -1,0 +1,496 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --primary: #8b5a8f;
+    --secondary: #d4a5d4;
+    --accent: #f5e6f5;
+    --dark: #2d1b3d;
+    --light: #f9f7fa;
+    --text: #3a3a3a;
+    --border: #e8e0eb;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+    color: var(--text);
+    background-color: var(--light);
+}
+
+/* Navbar */
+.navbar {
+    background-color: white;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.nav-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 1rem 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: var(--primary);
+    letter-spacing: 2px;
+}
+
+.nav-menu {
+    display: flex;
+    list-style: none;
+    gap: 2rem;
+}
+
+.nav-link {
+    text-decoration: none;
+    color: var(--text);
+    font-weight: 500;
+    transition: color 0.3s ease;
+    position: relative;
+}
+
+.nav-link:hover {
+    color: var(--primary);
+}
+
+.nav-link::after {
+    content: '';
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background-color: var(--primary);
+    transition: width 0.3s ease;
+}
+
+.nav-link:hover::after {
+    width: 100%;
+}
+
+.hamburger {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+}
+
+.hamburger span {
+    width: 25px;
+    height: 3px;
+    background-color: var(--primary);
+    margin: 5px 0;
+    transition: 0.3s;
+}
+
+/* Hero Section */
+.hero {
+    background: linear-gradient(135deg, var(--light) 0%, var(--accent) 100%);
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 2rem;
+}
+
+.hero-content {
+    max-width: 800px;
+    text-align: center;
+}
+
+.hero-content h1 {
+    font-size: 3.5rem;
+    color: var(--dark);
+    margin-bottom: 1rem;
+    font-weight: 700;
+    line-height: 1.2;
+}
+
+.hero-subtitle {
+    font-size: 1.5rem;
+    color: var(--primary);
+    margin-bottom: 2rem;
+    font-weight: 600;
+}
+
+.hero-text {
+    font-size: 1.1rem;
+    color: var(--text);
+    margin-bottom: 2rem;
+    line-height: 1.8;
+}
+
+.hero-text p {
+    margin-bottom: 1rem;
+}
+
+.cta-button {
+    display: inline-block;
+    padding: 1rem 2.5rem;
+    background-color: var(--primary);
+    color: white;
+    text-decoration: none;
+    border-radius: 50px;
+    font-weight: 600;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 15px rgba(139, 90, 143, 0.3);
+}
+
+.cta-button:hover {
+    background-color: var(--dark);
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(139, 90, 143, 0.4);
+}
+
+/* Container */
+.container {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 0 2rem;
+}
+
+/* Sobre Section */
+.sobre {
+    padding: 6rem 2rem;
+    background-color: white;
+}
+
+.sobre h2 {
+    font-size: 2.5rem;
+    color: var(--primary);
+    margin-bottom: 2rem;
+    text-align: center;
+}
+
+.sobre-content {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.sobre-text {
+    font-size: 1.05rem;
+    line-height: 1.9;
+    color: var(--text);
+}
+
+.sobre-text p {
+    margin-bottom: 1.5rem;
+}
+
+.sobre-text strong {
+    color: var(--primary);
+    font-weight: 600;
+}
+
+/* Projetos Section */
+.projetos {
+    padding: 6rem 2rem;
+    background-color: var(--accent);
+}
+
+.projetos h2 {
+    font-size: 2.5rem;
+    color: var(--primary);
+    margin-bottom: 3rem;
+    text-align: center;
+}
+
+.projeto-categoria {
+    margin-bottom: 4rem;
+}
+
+.projeto-categoria h3 {
+    font-size: 2rem;
+    color: var(--dark);
+    margin-bottom: 2rem;
+    padding-bottom: 1rem;
+    border-bottom: 3px solid var(--primary);
+}
+
+.projeto-item {
+    background-color: white;
+    padding: 2.5rem;
+    margin-bottom: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(139, 90, 143, 0.1);
+    transition: all 0.3s ease;
+}
+
+.projeto-item:hover {
+    box-shadow: 0 8px 25px rgba(139, 90, 143, 0.2);
+    transform: translateY(-5px);
+}
+
+.projeto-header h4 {
+    font-size: 1.5rem;
+    color: var(--primary);
+    margin-bottom: 0.5rem;
+}
+
+.projeto-desc {
+    color: #666;
+    font-style: italic;
+    margin-bottom: 1rem;
+}
+
+.projeto-item p {
+    margin-bottom: 1rem;
+    line-height: 1.8;
+    color: var(--text);
+}
+
+.projeto-subsecao {
+    margin-top: 1.5rem;
+    padding-top: 1.5rem;
+    border-top: 1px solid var(--border);
+}
+
+.projeto-subsecao h5 {
+    font-size: 1.1rem;
+    color: var(--primary);
+    margin-bottom: 0.8rem;
+    font-weight: 600;
+}
+
+.projeto-subsecao p {
+    color: var(--text);
+    line-height: 1.8;
+}
+
+.projeto-links {
+    display: flex;
+    gap: 1rem;
+    flex-wrap: wrap;
+    margin: 1.5rem 0;
+}
+
+.link-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 0.75rem 1.5rem;
+    background-color: var(--secondary);
+    color: white;
+    text-decoration: none;
+    border-radius: 50px;
+    font-size: 0.9rem;
+    font-weight: 600;
+    transition: all 0.3s ease;
+}
+
+.link-btn:hover {
+    background-color: var(--primary);
+    transform: translateY(-2px);
+}
+
+.link-btn i {
+    font-size: 1rem;
+}
+
+/* Contato Section */
+.contato {
+    padding: 6rem 2rem;
+    background-color: white;
+}
+
+.contato h2 {
+    font-size: 2.5rem;
+    color: var(--primary);
+    margin-bottom: 2rem;
+    text-align: center;
+}
+
+.contato-content {
+    max-width: 600px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.contato-content > p {
+    font-size: 1.1rem;
+    color: var(--text);
+    margin-bottom: 2rem;
+}
+
+.contato-info {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    margin-bottom: 2rem;
+}
+
+.info-item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    font-size: 1.1rem;
+}
+
+.info-item i {
+    color: var(--primary);
+    font-size: 1.5rem;
+}
+
+.info-item a {
+    color: var(--text);
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.info-item a:hover {
+    color: var(--primary);
+}
+
+.social-links {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    margin-top: 2rem;
+}
+
+.social-links a {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 50px;
+    height: 50px;
+    background-color: var(--accent);
+    color: var(--primary);
+    border-radius: 50%;
+    text-decoration: none;
+    font-size: 1.5rem;
+    transition: all 0.3s ease;
+}
+
+.social-links a:hover {
+    background-color: var(--primary);
+    color: white;
+    transform: scale(1.1);
+}
+
+/* Footer */
+.footer {
+    background-color: var(--dark);
+    color: white;
+    text-align: center;
+    padding: 2rem;
+    font-size: 0.9rem;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .nav-menu {
+        display: none;
+        position: absolute;
+        left: 0;
+        top: 70px;
+        flex-direction: column;
+        background-color: white;
+        width: 100%;
+        text-align: center;
+        gap: 0;
+    }
+
+    .nav-menu.active {
+        display: flex;
+    }
+
+    .nav-link {
+        display: block;
+        padding: 1rem;
+        border-bottom: 1px solid var(--border);
+    }
+
+    .hamburger {
+        display: flex;
+    }
+
+    .hamburger.active span:nth-child(1) {
+        transform: rotate(45deg) translate(10px, 10px);
+    }
+
+    .hamburger.active span:nth-child(2) {
+        opacity: 0;
+    }
+
+    .hamburger.active span:nth-child(3) {
+        transform: rotate(-45deg) translate(7px, -7px);
+    }
+
+    .hero-content h1 {
+        font-size: 2.5rem;
+    }
+
+    .hero-subtitle {
+        font-size: 1.2rem;
+    }
+
+    .hero-text {
+        font-size: 1rem;
+    }
+
+    .sobre h2,
+    .projetos h2,
+    .contato h2 {
+        font-size: 2rem;
+    }
+
+    .projeto-categoria h3 {
+        font-size: 1.5rem;
+    }
+
+    .projeto-item {
+        padding: 1.5rem;
+    }
+
+    .projeto-links {
+        flex-direction: column;
+    }
+
+    .link-btn {
+        width: 100%;
+        justify-content: center;
+    }
+
+    .social-links {
+        gap: 1.5rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .hero-content h1 {
+        font-size: 2rem;
+    }
+
+    .hero-subtitle {
+        font-size: 1rem;
+    }
+
+    .nav-container {
+        padding: 1rem;
+    }
+
+    .cta-button {
+        padding: 0.75rem 2rem;
+        font-size: 0.95rem;
+    }
+
+    .contato-info {
+        flex-direction: column;
+    }
+}
