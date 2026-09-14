@@ -54,7 +54,7 @@ export default function PortfolioShell() {
         <div className="hero-footer">
           <p>
             Sou Kauany, publicitária em formação, e transformo pesquisa,
-            comportamento e estratégia em comunicação que faça sentido.
+            comportamento e estratégia em comunicação efetiva.
           </p>
           <a href="#sobre">Conheça minha trajetória ↓</a>
         </div>
