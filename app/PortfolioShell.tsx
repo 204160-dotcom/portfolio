@@ -46,14 +46,14 @@ export default function PortfolioShell() {
       </header>
 
       <section className="hero" id="top">
-        <p className="eyebrow">Publicidade · Pesquisa · Planejamento</p>
+        <p className="eyebrow">Criatividade · Estratégia · Planejamento</p>
         <h1>
           Ideias com
           <span>intenção.</span>
         </h1>
         <div className="hero-footer">
           <p>
-            Sou Kauany, publicitária em formação, e gosto de transformar pesquisa,
+            Sou Kauany, publicitária em formação, e transformo pesquisa,
             comportamento e estratégia em comunicação que faça sentido.
           </p>
           <a href="#sobre">Conheça minha trajetória ↓</a>
@@ -134,6 +134,9 @@ export default function PortfolioShell() {
           </p>
           <div className="contact-links">
             <a href="mailto:kauanyvguerra@gmail.com">kauanyvguerra@gmail.com ↗</a>
+            <a href="https://wa.me/5554997124469" target="_blank" rel="noreferrer">
+              WhatsApp ↗
+            </a>
             <a
               href="https://www.linkedin.com/in/kauany-verdi-guerra-1398a0352/"
               target="_blank"
